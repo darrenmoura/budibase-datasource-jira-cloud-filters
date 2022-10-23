@@ -1,19 +1,16 @@
-# Test-plugin
-This is a readme for your new Budibase plugin.
+# Budibase Datasource - Jira Cloud Filters
+Manage Jira Cloud filters. Uses Jira REST API V2, you can find the docs for it [here](https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro).
 
-# Description
-Kekkles
+## Auth
+Uses Basic Auth with an API Token. For more info on setting this up, check [here](https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis).
 
-Find out more about [Budibase](https://github.com/Budibase/budibase).
-
-## Instructions
-
-To build your new  plugin run the following in your Budibase CLI:
-```
-budi plugins --build
-```
-
-You can also re-build everytime you make a change to your plugin with the command:
-```
-budi plugins --watch
+# Trying it out
+JIra Cloud isn't free, but you can start a free trial using a new account which will allow testing the queries in this datasource.
+## Create and Update operations
+Below is an example config to create a new filter (POST/PUT request body):
+```json
+{
+	"name": "Budibase Filter",
+	"jql": "project = Budibase"
+}
 ```

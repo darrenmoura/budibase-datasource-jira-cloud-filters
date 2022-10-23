@@ -22,12 +22,3 @@ export interface UpdateQuery {
 export interface DeleteQuery {
     filterId: string;
 }
-
-export interface AssignQuery {
-    issueIdOrKey: string;
-    accountId: string;
-}
-
-export interface UnassignQuery {
-    issueIdOrKey: string;
-}

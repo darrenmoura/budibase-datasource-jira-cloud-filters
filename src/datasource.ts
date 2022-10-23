@@ -1,6 +1,6 @@
 import { IntegrationBase } from "@budibase/types"
 import fetch from "node-fetch"
-import { AssignQuery, DeleteQuery, JsonQuery, ReadQuery, SearchQuery, UnassignQuery, UpdateQuery } from "./types"
+import { DeleteQuery, JsonQuery, ReadQuery, SearchQuery, UpdateQuery } from "./types"
 import { toBase64, trimUrlTrailingSlash } from "./util"
 
 interface RequestOpts {
